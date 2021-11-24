@@ -39,6 +39,36 @@
       "comparison": "included",
       "timeout": 5,
       "points": 5
+    },
+    {
+      "name": "File exists",
+      "setup": "",
+      "run": "[ -e allthenumbers.py ] && exit 0 || exit 1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "Output numbers",
+      "setup": "",
+      "run": "/bin/bash .github/scripts/test-challenge2.sh test_numbers",
+      "input": "",
+      "output": "pass",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Output not number",
+      "setup": "",
+      "run": "/bin/bash .github/scripts/test-challenge2.sh test_not_number",
+      "input": "",
+      "output": "pass",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
     }
   ]
 }

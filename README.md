@@ -23,3 +23,9 @@ In `comparenumbers.py` file, write a python program that asks the user to input 
     ```
     2 is less than 8
     ```
+
+## Challenge Exercise 2
+
+In `allthenumbers.py` file, write a python program that asks the user to input a number, then prints out all numbers up to and including that number, starting from 1.
+		
+If the input is not a number, the program will print `input is not a number` to user.
