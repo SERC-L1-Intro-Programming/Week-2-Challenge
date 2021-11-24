@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "File exists",
+      "setup": "",
+      "run": "[ -e filename.py ] && exit 0 || exit 1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "Add numbers",
+      "setup": "",
+      "run": "/bin/bash .github/scripts/test.sh",
+      "input": "",
+      "output": "pass",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    }
+  ]
+}
