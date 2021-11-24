@@ -3,7 +3,7 @@
     {
       "name": "File exists",
       "setup": "",
-      "run": "[ -e filename.py ] && exit 0 || exit 1",
+      "run": "[ -e comparenumbers.py ] && exit 0 || exit 1",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -11,9 +11,29 @@
       "points": 0
     },
     {
-      "name": "Add numbers",
+      "name": "Two numbers are equal",
       "setup": "",
-      "run": "/bin/bash .github/scripts/test.sh",
+      "run": "/bin/bash .github/scripts/test-challenge1.sh test_equal",
+      "input": "",
+      "output": "pass",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "First number greater than second number",
+      "setup": "",
+      "run": "/bin/bash .github/scripts/test-challenge1.sh test_greater_than",
+      "input": "",
+      "output": "pass",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "First number less than second number",
+      "setup": "",
+      "run": "/bin/bash .github/scripts/test-challenge1.sh test_less_than",
       "input": "",
       "output": "pass",
       "comparison": "included",
