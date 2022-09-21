@@ -12,16 +12,16 @@ on:
 
 jobs:
   # job to run autograding
-  build:
+  grade:
     name: Autograding
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       # run grading
       # add id to step so outputs can be referenced
-      - uses: education/autograding@v1
+      - uses: markpatterson27/autograding@dev-release
         name: "** Grading and Feedback **"
         id: autograde
         continue-on-error: true
@@ -34,10 +34,10 @@ jobs:
     name: Build Activity Icons
     runs-on: ubuntu-latest
     if: always()
-    needs: build
+    needs: grade
     steps:
       # need to checkout whole repo
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
