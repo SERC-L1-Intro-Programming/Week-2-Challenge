@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # run grading
       # add id to step so outputs can be referenced
@@ -37,7 +37,7 @@ jobs:
     needs: grade
     steps:
       # need to checkout whole repo
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
