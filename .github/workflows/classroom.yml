@@ -22,7 +22,7 @@ jobs:
 
       # run grading
       # add id to step so outputs can be referenced
-      - uses: markpatterson27/autograding@dev-release
+      - uses: markpatterson27/autograding@dev-step-summary-release
         name: "** Grading and Feedback **"
         id: autograde
         # continue-on-error: true
