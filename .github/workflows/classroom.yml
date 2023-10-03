@@ -25,7 +25,7 @@ jobs:
       - uses: markpatterson27/autograding@dev-release
         name: "** Grading and Feedback **"
         id: autograde
-        continue-on-error: true
+        # continue-on-error: true
 
     outputs:
       grading-score: ${{ steps.autograde.outputs.Points }}
